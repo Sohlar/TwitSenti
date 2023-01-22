@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Text Input Form</title>
+</head>
+<body>
+    <h1>Enter Text</h1>
+    <form method="POST" action="/">
+        <label for="text">Text:</label>
+        <input type="text" id="text" name="text">
+        <input type="submit" value="Submit">
+    </form>
+    {% include 'form_response.html' %}
+</body>
+</html>

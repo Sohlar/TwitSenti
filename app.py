@@ -13,7 +13,7 @@ def index():
         form_data = request.form['text']
         response = requests.get(form_data)
         tweet_id = re.search(r'status\/(\d+)', response.text).group(1)
-
+    #hello
         try:
             tweet = api.get_status(tweet_id)
             scores = generateScore(tweet.text)
